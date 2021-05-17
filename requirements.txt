@@ -4,3 +4,4 @@ discord.py==1.7.2
 pytube==10.8.1
 youtube_dl==2021.4.26
 discord==1.0.1
+PyNaCl==2.2.0
