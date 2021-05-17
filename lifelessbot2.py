@@ -206,6 +206,11 @@ async def Play(ctx, url : str):
     await ctx.send("Let's vibe with the song!"+lifelessemoji)
 
 @client1.command()
+async def Replay(ctx):
+    voice = get(client1.voice_clients, guild=ctx.guild)
+    voice.play(discord.FFmpegPCMAudio("song.mp3"))
+    
+@client1.command()
 async def Stop(ctx):
 
     voice = get(client1.voice_clients, guild=ctx.guild)
