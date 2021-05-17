@@ -206,6 +206,11 @@ async def Play(ctx, url : str):
     await ctx.send("Let's vibe with the song!"+lifelessemoji)
 
 @client1.command()
+async def Replay(ctx)
+    voice.play(discord.FFmpegPCMAudio("song.mp3"))
+
+
+@client1.command()
 async def Stop(ctx):
 
     voice = get(client1.voice_clients, guild=ctx.guild)
@@ -219,7 +224,7 @@ async def Stop(ctx):
 async def DM(ctx, user: discord.User, *, message=None):
     message = message or "EVENT-1 '\n'Hello Hello <a:girlkiss:843491799246962708> '\n'Type **lifelessParticipate** to participate. "
     await user.send(message)
-    
+
 event_1_usernames_list=[]
 
 @client1.command()
@@ -236,6 +241,11 @@ async def ListEvent1(ctx):
 
 
 
+with open('token1.txt') as f:
+    TOKEN = f.readline()
+
+client1.run(TOKEN)
+
 
 
 
@@ -243,4 +253,3 @@ async def ListEvent1(ctx):
 
 #EDIT1
 #client.run(LIFELESSTOKEN)
-client1.run('ODQyOTM5MjExNTA5OTIzODYy.YJ8mUQ.68ae5ztqsxc8aEg2_MHhvATsmNk')

@@ -243,8 +243,10 @@ async def ListEvent1(ctx):
 
 
 
+with open('token2.txt') as f:
+    TOKEN = f.readline()
 
+client1.run(TOKEN)
 
 
 #client.run(LIFELESSTOKEN)
-client1.run('ODQzNTY0MjM5NDM2MzgyMjA4.YKFsaw.HkTjpGqZeYOSdXgfj2fD73HKTdg')
